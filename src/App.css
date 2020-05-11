@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&display=swap');
+
+html, body, .app, .weather_app {
+  font-family: 'Baloo 2', cursive;
+}
+body {
+  background: url(./Assets/light-bg.jpg)no-repeat;
+  color: black !important;
+}
+
+
+@media only screen and (min-width: 990px) {
+
+  .brand-logo {
+    margin-left: 20px;
+  }
+}
+svg {
+  width: 150px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.card {
+  background: rgba(255, 255, 255, 0.35);
+  padding: 10px;
+}
+.loading {
+  height: 400px;
+  text-align: center;
+}
+.loading img {
+  width: 30%;
+  filter: drop-shadow(0px 2px 10px rgba(255, 255, 255, 0.795));
+  padding-top: 30px;
+}
+.loading_text {
+  font-size: 34px;
+  color: white;
+  font-weight: 900;
+  transform: translateY(-50px);
+}
+.not-found {
+  font-size: 40px;
+  padding: 20% 10px;
+}
+nav {
+  background-color: transparent;
+}
+.small {
+  font-size: 16px !important;
+}
+input::placeholder,input.valid[type=text]:not(.browser-default),input, input.valid[type="text"], input:focus, input:hover, input:active {
+  font-size: 20px !important;
+  font-family: 'Baloo 2', cursive !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+  color: black !important;
+  border-radius: 50px !important;
+  padding-left: 30px !important;
+  background-color: rgba(255, 255, 255, 0.795) !important;
+}
+.active, .prefix {
+  color: white !important;
+}
+.sidenav {
+  background-color: rgba(255, 255, 255, 0.603);
+}
+.sidebar_logo {
+  position: relative;
+  height: 150px;
+  font-size: 30px;
+  padding: 40px 0;
+}
+.sidebar_logo i {
+  position: absolute;
+  top: 50px;
+  left: 30px;
+}
+
+.wi {
+  font-size: 5rem;
+  padding-top: 20px;
+  color: black;
+}
+
+.city, .degree {
+  font-size: 28px;
+  font-weight: 600;
+  color: black;
+}
+.favorite {
+  float: right;
+  padding: 20px;
+  color: black;
+  transition: all .5s;
+  cursor: pointer;
+}
+
+.favorite:hover {
+  color: rgb(224, 36, 19) !important;
+  transform: scale3d(1.2, 1.2, 1.2);
+}
+.weather_name {
+  font-size: 42px;
+  color: black;
+  font-weight: 500;
+  letter-spacing: 8px;
+  text-transform: capitalize;
+}
+
+.further_weather {
+  position: relative;
+}
+.further_weather i, .further_weather .city, .further_weather .degree {
+  font-weight: 100;
+  text-transform: capitalize;
+}
+.further_weather i{
+  font-size: 38px;
+  margin-right: 10px;
+}
+.days {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 22px;
+  font-weight: 500;
+  color: black;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: black;
+  transition: all .5s;
+  z-index: 20;
+  cursor: pointer;
+}
+
+.close:hover {
+  transform: scale3d(1.2, 1.2, 1.2);
+  color: rgb(224, 36, 19);
+}
+.noItem {
+    text-align: center;
+    font-size: 40px;
+    padding: 20% 0 !important;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.carousel {
+  height: 330px !important;
+}
+.carousel-item {
+  min-width: 250px;
+}
+.not_found {
+  padding: 20% 10%;
+}
+.not_found p {
+  font-size: 26px;
+}
+.not_found h1 {
+  font-size: 10em;
+  font-weight: 600;
+}
+.back button {
+  background-color: transparent;
+  border: none;
+}
+.back {
+  background-color: rgba(255, 255, 255, 0.795);
+  color: black;
+  border-radius: 50px;
+  padding: 10px 30px;
+  font-size: 22px;
+  border: none;
+  transform: translateY(0);
+  filter: drop-shadow(0px 2px 10px gray);
+  transition: all .5s;
+}
+.back:hover {
+  transform: translateY(-10px);
+  filter: drop-shadow(0px 10px 10px gray);
+}
+@media only screen and (max-width: 990px) {
+  .city, .degree {
+    font-size: 24px;
+  }
+  .wi {
+    font-size: 3rem;
+    padding-top: 20px;
+  }
+  .noItem {
+    font-size: 20px;
+    padding-top: 50%;
+  }
+  .loading img {
+    padding-top: 20%;
+  }
+  .not-found {
+    font-size: 30px;
+  }
+  .loading_text {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 650px){
+  .loading img {
+    padding-top: 40%;
+  }
+  .loading_text {
+    font-size: 18px;
+    transform: translateY(-30px);
+  }
+}
+/* Dark */
+.dark {
+  color: white;
+}
+body.dark-bg {
+  background: url(./Assets/dark-bg.png)no-repeat !important;
+  color: white !important;
+}
+
+.sidenav.dark {
+  background-color: rgba(0, 0, 0, 0.466) !important;
+}
+.sidenav.dark li a {
+  color: white !important;
+}
+.card.dark {
+  background-color: rgba(0, 0, 0, 0.466);
+}
